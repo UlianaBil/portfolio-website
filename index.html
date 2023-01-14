@@ -2,38 +2,40 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
-		<link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>UX/UI Designer</title>
 	</head>
 	<body id="header">
 		<header>
-			<img src="https://via.placeholder.com/150x50?text=Logo" alt="Your Name" />
-			<nav>
-				<ul>
-					<li><a href="index.html">Work</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+			<div class="container">
+				<img class="logo" src="img/Logo.png" alt="Uliana Bilenkiy" width="100" height="100" />
+				<nav>
+					<ul class="navigation">
+						<li><a href="index.html">Work</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 		<main>
 			<div id="hero">
-				<div>
+				<div class="container">
 					<h1>Hi, my name is Uliana Bilenkiy.</h1>
 					<p>I am a UI designer with a passion for creating aesthetically pleasing and functional products.</p>
 				</div>
 			</div>
 			<div id="work">
-				<div>
+				<div class="container">
 					<h2>My Work</h2>
-					<div>
+					<div class="row">
 						<div>
 							<h3>HomeChef</h3>
 							<p>HomeChef is a responsive web application that gives users the opportunity to save money and make their favorite restaurant-quality dishes at home.</p>
@@ -47,7 +49,7 @@
 								<img src="img/hc.png" alt="Home Chef Image" />
 							</picture>
 						</div>
-						<div>
+						<div class="row">
 							<h3>Tail Care</h3>
 							<p>
 								Tail Care is a mobile application that was created both for the iOS and Android operation systems. Helps pet owners save time taking care of their pets. The app offers all pet- related services in one place.
@@ -65,10 +67,10 @@
 			</div>
 		</main>
 		<footer id="contact">
-			<div>
+			<div class="container">
 				<h2>Get in Touch</h2>
 				<p>Looking for a designer for your next project? Contact me!</p>
-				<div>
+				<div class="row">
 					<a href="mailto:ulianabilenkiy@gmail.com" class="button contact"> Send Email</a>
 				</div>
 				<div>
