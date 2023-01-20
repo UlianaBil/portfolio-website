@@ -47,7 +47,7 @@ img {
   
   a{
     color: #2A3A45;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   a:visited{
@@ -56,18 +56,18 @@ img {
   
   a:hover {
     color: #EA5C2B;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   a:hover,
   a:focus {
   color: #EA5C2B;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
   a:active {
     color: #2A3A45;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
 .button {
@@ -79,6 +79,7 @@ img {
     border-radius: 3px;
     border-bottom: 2px solid #2A3A45;
     text-decoration: none;
+    transition: 0.2s opacity;
 }
 
 .button:visited {
@@ -121,6 +122,27 @@ img {
     text-decoration: none;
 }
 
+.button.resume {
+  background-color: transparent;
+  color: #2A3A45;
+  border: 2px solid #2a3a45;
+  text-decoration: none;
+}
+
+.button.resume:hover {
+  background-color: transparent;
+  color: #EA5C2B;
+  border: 2px solid #EA5C2B;
+  text-decoration: none;
+}
+
+.button.resume:active {
+  background-color: transparent;
+  color: #2A3A45;
+  border: 2px solid #2a3a45;
+  text-decoration: none;
+}
+
 header {
     background-color: #ffffff;
     padding: 10px;
@@ -136,6 +158,11 @@ header {
     padding: 0 15px;
   }
 
+  .navigation :hover {
+  background-color: #EA5C2B;
+  color: #ffffff;
+  }
+
   .row {
     margin: 25px 0; 
   }
@@ -143,6 +170,8 @@ header {
   #hero h1 {
     text-align: center; 
   }
+
+
 
   #work h2 {
     text-align: center; 
@@ -163,13 +192,14 @@ header {
 
   #intro h1 {
     text-align: center;
+    padding-top: 25px;
   }
 
   #about a {
     text-align: left;
   }
   #about h2 {
-    text-align: center;
+    text-align: left;
   }
   .logo {
     max-width: 100px;
@@ -288,21 +318,43 @@ Large devices (1200px and larger)
     margin-top: 4px;
   } 
 
-.col-lg-5 {
-  width: 42%;
-  float: right;
-}
-
-.col-lg-7 {
-  width: 58%;
-  float: left;
-}
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
-
-
-
 }
+
+
+
+/*aminated button*/
+
+.button.contact {
+  animation: wiggle 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+

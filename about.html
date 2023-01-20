@@ -2,14 +2,14 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
-		<link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>UX/UI Designer</title>
 	</head>
 	<body id="header">
@@ -17,13 +17,13 @@
 			<div class="container">
 				<img class="logo" src="img/Logo.png" alt="Uliana Bilenkiy" width="100" height="100" />
 				<nav>
-				<ul class="navigation">
-					<li><a href="index.html">Work</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			    </nav>
-			</div>	
+					<ul class="navigation">
+						<li><a href="index.html">Work</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 		<main>
 			<div id="intro">
@@ -33,12 +33,12 @@
 			</div>
 			<div id="about">
 				<div class="container">
-					<picture>
-						<source media="(max-width:767px)" srcset="img/mypic@1x.png" />
-						<img src="img/mypic@1x.png" alt="Profile Picture" />
-					</picture>
 					<div class="row">
-						<div class=" col-lg-7">
+						<picture>
+							<source media="(max-width:767px)" srcset="img/mypic@1x.png" />
+							<img class="column col-md-6 col-lg-7" src="img/mypic@1x.png" alt="Profile Picture" />
+						</picture>
+						<div class="column col-md-6 col-lg-7">
 							<h2>My Story</h2>
 							<p>
 								My name is Uliana, I am a UI/UX designer currently based in the USA. I am passionate about creating aesthetically pleasing, meaningful, and functional products. When I discovered UI/UX design, I knew I had to
@@ -48,11 +48,11 @@
 								My goal is to become a valuable contributor to the UI designer community. That's why I constantly learn and discover new things to become a professional. Besides studying I love to travel, cook and spend time
 								with my family.
 							</p>
-							<a href="#" target="_blank">My Resume</a>
+							<a href="#" target="_blank" class="button resume">My Resume</a>
 						</div>
-						<div class="row">
-							<div class="col-lg-5">
-							<h2>Skills and Tools</h2>
+					</div>
+					<div class="row">
+						<div>
 							<div class="col-md-6">
 								<h3>Relevant Skills</h3>
 								<ul>
@@ -71,7 +71,6 @@
 									<li>Balsamiq</li>
 									<li>Marvel</li>
 								</ul>
-							</div>
 							</div>
 						</div>
 					</div>
