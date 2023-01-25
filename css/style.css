@@ -203,28 +203,28 @@ header {
   }
   .logo {
     max-width: 100px;
+    box-sizing: border-box;
   }
 
   header {
     background-color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
     margin: 0;
+    padding: 10px 0;
     position: fixed;
     width: 100%;
     box-shadow: 0px 5px 21px 0px rgba(42,58,69,1);
     -moz-box-shadow: 0px 5px 21px 0px rgba(42,58,69,1);
-    box-shadow: 0px 5px 21px 0px rgba(42,58,69,1);;
+    box-shadow: 0px 5px 21px 0px rgba(42,58,69,1);
+    
 }
 
   nav > ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
   }
 
-  nav > ul > li {
-    display: inline-block;
-  }
+ 
 
   nav > ul > li > a {
     padding: 0 15px;
@@ -249,7 +249,38 @@ header {
     font-weight: 700;
     color: #2a3a45;
   }
+
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
   
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    font-size: 40px;
+  }  
+
+  .navtoggle.responsive nav {
+    padding: 0px 0;
+  }
+  
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    background-color: #ffffff;
+    text-align: right;
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
+    
+ 
   #hero {
     background-color: #ffffff;
     padding: 20px 0;
@@ -261,6 +292,15 @@ header {
   main {
     padding-top: 99px;
   }
+
+  header {
+    height: 110px;
+  }
+
+  
+
+  
+  
 
 
   /* ==============================
@@ -299,6 +339,31 @@ Medium devices (640px and larger)
   margin-left: auto;
   margin-right: auto;
 }
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul {
+  margin: 1em 0;
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
+.logo {
+  max-width: 100px;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 10px;
+}
+
+
 
 }
   

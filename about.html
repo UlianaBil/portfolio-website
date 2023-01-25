@@ -9,20 +9,24 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/70e5458da5.js" crossorigin="anonymous"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>UX/UI Designer</title>
 	</head>
 	<body id="header">
 		<header>
 			<div class="container">
+				<div class="navtoggle" id="myNavtoggle">
 				<img class="logo" src="img/Logo.png" alt="Uliana Bilenkiy" width="100" height="100" />
 				<nav>
 					<ul class="navigation">
 						<li><a href="index.html">Work</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="#contact">Contact</a></li>
+						<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
 					</ul>
 				</nav>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -82,7 +86,7 @@
 				<h2>Get in Touch</h2>
 				<p>Looking for a designer for your next project? Contact me!</p>
 				<div class="row">
-					<a href="mailto:ulianabilenkiy@gmail.com" class="button contact"> Send Email</a>
+					<a href="mailto:ulianabilenkiy@gmail.com" class="button contact" onclick="menuToggle()"> Send Email</a>
 				</div>
 				<div>
 					<a href="LINKEDIN-URL" target="_blank">
@@ -107,6 +111,7 @@
 				<p>copyright Uliana Bilenkiy 2022</p>
 			</div>
 		</footer>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script src="js/scripts.js"></script>
 	</body>
 </html>
