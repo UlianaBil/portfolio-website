@@ -2,7 +2,7 @@
 Colors used:
 Background Color : #eeeeee;
 Text Color : #2A3A45;
-Accent Color : #C83908;
+Accent Color : #C73908;
 Link Color : #8A8A8A
 */
 
@@ -55,13 +55,13 @@ img {
   }
   
   a:hover {
-    color: #C83908;
+    color: #C73908;
     text-decoration: none;
   }
 
   a:hover,
   a:focus {
-  color: #C83908;
+  color: #C73908;
   text-decoration: none;
 }
 
@@ -110,8 +110,8 @@ img {
 
 .button.contact:hover {
     background-color: transparent;
-    color: #C83908;
-    border: 2px solid #C83908;
+    color: #C73908;
+    border: 2px solid #C73908;
     text-decoration: none;
 }
 
@@ -131,8 +131,8 @@ img {
 
 .button.resume:hover {
   background-color: transparent;
-  color: #C83908;
-  border: 2px solid #C83908;
+  color: #C73908;
+  border: 2px solid #C73908;
   text-decoration: none;
 }
 
@@ -159,7 +159,7 @@ header {
   }
 
   .navigation :hover {
-  background-color: #C83908;
+  background-color: #C73908;
   color: #ffffff;
   }
 
@@ -241,7 +241,7 @@ header {
   nav > ul > li > a:hover {
     padding: 0 15px;
     font-weight: 700;
-    color: #C83908;
+    color: #C73908;
   } 
 
   nav > ul > li > a:active {
